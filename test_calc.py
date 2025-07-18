@@ -1,5 +1,5 @@
 import pytest
-from calc import add, divide, multiply, subtract
+from Calc import add, divide, multiply, subtract
 
 def test_add():
     result = add(10, 5)

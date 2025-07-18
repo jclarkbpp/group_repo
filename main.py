@@ -1,4 +1,4 @@
-from calc import add, divide, multiply, subtract
+from Calc import add, divide, multiply, subtract
 
 repeat = True
 while repeat == True:  

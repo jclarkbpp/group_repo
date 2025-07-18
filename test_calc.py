@@ -1,28 +1,21 @@
-import unittest
+import pytest
+from calc import add, divide, multiply, subtract
 
-class AddTest(unittest.TestCase):
-    def test_add(self):
-        result = add(10, 5)
-        expected = 15
-        self.assertEqual(result, expected)
+def test_add(self):
+    result = add(10, 5)
+    assert result == 15
 
-class SubtractTest(unittest.TestCase):
-    def test_subtract(self):
-        result = subtract(10, 5)
-        expected = 5
-        self.assertEqual(result, expected)
+def test_subtract(self):
+    result = subtract(10, 5)
+    assert result == 5
+    
+def test_multiply(self):
+    result = multiply(10, 5)
+    assert result == 50
 
-class MultiplyTest(unittest.TestCase):
-    def test_multiply(self):
-        result = multiply(10, 5)
-        expected = 50
-        self.assertEqual(result, expected)
+def test_divide(self):
+    result = divide(10, 5)
+    assert result == 2
 
-class DivideTest(unittest.TestCase):
-    def test_divide(self):
-        result = divide(10, 5)
-        expected = 2
-        self.assertEqual(result, expected)
 
-if __name__ == '__main__':
-    unittest.main
+
